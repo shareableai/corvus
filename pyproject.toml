@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "corvus-ml"
+version = "0.0.1"
+description = "Search ShareableAI Models"
+
+authors = ["Lissa Hyacinth <lissa@shareableai.com>"]
+license = "LGPL-3.0-or-later"
+readme = "README.md"
+packages = [{include = "corvus"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+jackdaw-ml = ">=0.0.5"
+click = ">=8,<9"
+tomli-w = "1.0.0"
+tomli = "2.0.1"
+rich = ">=13,<14"
+setuptools = ">=67.0.0"
+
+[tool.poetry.scripts]
+corvus = { callable = "corvus:cli" }
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
