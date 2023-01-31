@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "corvus-ml"
-version = "0.0.1"
+version = "0.0.2"
 description = "Search ShareableAI Models"
 
 authors = ["Lissa Hyacinth <lissa@shareableai.com>"]
